@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet">
+    <title>Kalkulator segitiga</title>
+</head>
+<body>
+    <header class="row">
+        <div class="col-md-12">
+            <button type="button" id="toLuas" class="btn-primary">Luas segitiga</button>
+        </div>
+        <div class="col-md-12">
+            <button type="button" id="toKeliling" class="btn-danger">Keliling Segitiga</button>
+        </div>
+    </header>
+
+    <img src="assets/gambar alas dan tinggi segitiga.png">
+
+    <main id="formLuas">
+        <form>
+            <div>
+                <h1>Hitung Luas Segitiga</h1>
+            </div>
+            <div>
+                <label for="alas">
+                    Alas Segitiga
+                </label>
+                <input type="number" placeholder="Nilai Alas" min="1" id="alas" value="1">
+            </div>
+            <div>
+                <label for="tinggi">
+                    Tinggi Segitiga
+                </label>
+                <input type="number" placeholder="Nilai Tinggi" min="1" id="tinggi" value="1">
+            </div>
+            <div>
+                <button type="button" id="hitungluas" class="btn-success"> Hitung</button>
+            </div>
+            <div id="hasilluas"></div>
+        </form>
+    </main>
+
+    <main id="formKeliling">
+        <form>
+            <div>
+                <h1>Hitung Keliling Segitiga</h1>
+            </div>
+            <div>
+                <label for="sisi_satu">
+                    Sisi Pertama
+                </label>
+                <input type="number" placeholder="Nilai sisi pertama" min="1" id="sisi_satu" value="1">
+            </div>
+            <div>
+                <label for="sisi_dua">
+                    Sisi Kedua
+                </label>
+                <input type="number" placeholder="Nilai sisi kedua" min="1" id="sisi_dua" value="1">   
+            </div>
+            <div>
+                <label for="sisi_tiga">
+                    Sisi Ketiga
+                </label>
+                <input type="number" placeholder="Nilai sisi ketiga" min="1" id="sisi_tiga" value="1">   
+            </div>
+            <div>
+                <button type="button" id="hitungkeliling" class="btn-success">Hitung</button>
+            </div>
+            <div id="hasil_keliling"></div>
+        </form>
+    </main>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
